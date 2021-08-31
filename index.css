@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap');
 body{
     margin: 0;
+    font-family: 'Barlow', sans-serif;
 }
 .hide-desk{
     display: none;
@@ -205,6 +207,12 @@ main{
     width:70% ;
 }
 /* News Section */
+a h2{
+    text-align: left;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
 .news-section{
     height:60vh;
     display: flex;
@@ -333,6 +341,9 @@ footer {
       width: 20%;
       text-align: left;
   }
+  .ok{
+      align-items: baseline;
+  }
   .ok > li{
       text-transform: capitalize;
   }
@@ -375,6 +386,8 @@ footer {
     font-size: 16px;
     margin-left: -40px;
   }
+
+
   /* footer bottom content */
   .footer-bottom-content{
     display: flex;
@@ -390,7 +403,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 80%;
+    width: 30%;
   }
   .footer-bottom-content-left > p{
     display: flex;
@@ -425,7 +438,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 80%;
+    width: 70%;
   }
   .footer-bottom-content-right > ul{
     display: flex;
@@ -435,8 +448,7 @@ footer {
   }
   .footer-bottom-content-right > ul > li{
     list-style: none;
-    padding: 10px;
-    
+    padding: .5rem;
   }
   .footer-bottom-content-right > ul > li > span{
     color: #666666;
@@ -472,7 +484,7 @@ footer {
 .darkgray{ color: #333333}
 .grey{color: #484848}
 .lightgrey{color: #898989}
-.white{color: white; border: 1px solid white;}
+.white{color: white;}
 /* Background Colors */
 .back-red{ background-color: #f93549;}
 .back-lightred{ background-color: #fa4a5c}
@@ -566,6 +578,12 @@ p{
 .newsletter-content-left, .newsletter-content-right{
     width: 100%;
 }
+.input-wrapper{
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: aqua;
+    height: 20vh;
+}
 /* Footer Section */
 footer{
     height: 70vh;
@@ -594,9 +612,25 @@ footer{
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    align-items: left;
+    align-content: left;
+}
+/* Footer Bottom Content */
+.footer-bottom-content{
+    flex-direction: column;
+}
+.footer-bottom-content-left, .footer-bottom-content-right{
+    width: 90%;
+}
+.footer-bottom-content-right ul {
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    align-content: center;
+}
+.footer-bottom-content-left, .footer-bottom-content-right > span, p, li {
+    justify-content: center;
+    font-size: 1rem;
 }
 ul{
     list-style: none;
